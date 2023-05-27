@@ -1,0 +1,185 @@
+@prefix ns1: <http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Anthony_Davis a ns1:BasketballPlayer ;
+    ns1:age 30 ;
+    ns1:birthDate "1993-03-11"^^xsd:date ;
+    ns1:hasPosition ns1:Power_Forward ;
+    ns1:height 2.08 ;
+    ns1:name "Anthony Davis"^^xsd:string ;
+    ns1:playsFor ns1:Los_Angeles_Lakers ;
+    ns1:weight 115.7 .
+
+ns1:Chris_Paul a ns1:BasketballPlayer ;
+    ns1:age 37 ;
+    ns1:birthDate "1985-05-06"^^xsd:date ;
+    ns1:hasPosition ns1:Point_Guard ;
+    ns1:height 1.83 ;
+    ns1:name "Chris Paul"^^xsd:string ;
+    ns1:playsFor ns1:Phoenix_Suns ;
+    ns1:weight 79.4 .
+
+ns1:Damian_Lillard a ns1:BasketballPlayer ;
+    ns1:age 32 ;
+    ns1:birthDate "1990-07-15"^^xsd:date ;
+    ns1:hasPosition ns1:Point_Guard ;
+    ns1:height 1.88 ;
+    ns1:name "Damian Lillard"^^xsd:string ;
+    ns1:playsFor ns1:Portland_Trail_Blazers ;
+    ns1:weight 88.5 .
+
+ns1:Giannis_Antetokounmpo a ns1:BasketballPlayer ;
+    ns1:age 28 ;
+    ns1:birthDate "1994-12-06"^^xsd:date ;
+    ns1:hasPosition ns1:Power_Forward ;
+    ns1:height 2.11 ;
+    ns1:name "Giannis Antetokounmpo"^^xsd:string ;
+    ns1:playsFor ns1:Milwaukee_Bucks ;
+    ns1:weight 110.2 .
+
+ns1:James_Harden a ns1:BasketballPlayer ;
+    ns1:age 33 ;
+    ns1:birthDate "1989-08-26"^^xsd:date ;
+    ns1:hasPosition ns1:Shooting_Guard ;
+    ns1:height 1.96 ;
+    ns1:name "James Harden"^^xsd:string ;
+    ns1:playsFor ns1:Philadelphia_76ers ;
+    ns1:weight 99.8 .
+
+ns1:Jimmy_Butler a ns1:BasketballPlayer ;
+    ns1:age 33 ;
+    ns1:birthDate "1989-09-14"^^xsd:date ;
+    ns1:hasPosition ns1:Small_Forward ;
+    ns1:height 2.01 ;
+    ns1:name "Jimmy Butler"^^xsd:string ;
+    ns1:playsFor ns1:Miami_Heat ;
+    ns1:weight 104.3 .
+
+ns1:Joel_Embiid a ns1:BasketballPlayer ;
+    ns1:age 29 ;
+    ns1:birthDate "1994-03-16"^^xsd:date ;
+    ns1:hasPosition ns1:Center ;
+    ns1:height 2.13 ;
+    ns1:name "Joel Embiid"^^xsd:string ;
+    ns1:playsFor ns1:Philadelphia_76ers ;
+    ns1:weight 127.0 .
+
+ns1:Kawhi_Leonard a ns1:BasketballPlayer ;
+    ns1:age 31 ;
+    ns1:birthDate "1991-06-29"^^xsd:date ;
+    ns1:hasPosition ns1:Small_Forward ;
+    ns1:height 2.01 ;
+    ns1:name "Kawhi Leonard"^^xsd:string ;
+    ns1:playsFor ns1:Los_Angeles_Clippers ;
+    ns1:weight 102.1 .
+
+ns1:Kevin_Durant a ns1:BasketballPlayer ;
+    ns1:age 34 ;
+    ns1:birthDate "1988-09-29"^^xsd:date ;
+    ns1:hasPosition ns1:Small_Forward ;
+    ns1:height 2.08 ;
+    ns1:name "Kevin Durant"^^xsd:string ;
+    ns1:playsFor ns1:Brooklyn_Nets ;
+    ns1:weight 108.0 .
+
+ns1:Kyrie_Irving a ns1:BasketballPlayer ;
+    ns1:age 31 ;
+    ns1:birthDate "1992-03-23"^^xsd:date ;
+    ns1:hasPosition ns1:Point_Guard ;
+    ns1:height 1.91 ;
+    ns1:name "Kyrie Irving"^^xsd:string ;
+    ns1:playsFor ns1:Brooklyn_Nets ;
+    ns1:weight 88.5 .
+
+ns1:LeBron_James a ns1:BasketballPlayer ;
+    ns1:age 38 ;
+    ns1:birthDate "1984-12-30"^^xsd:date ;
+    ns1:hasPosition ns1:Small_Forward ;
+    ns1:height 2.06 ;
+    ns1:name "LeBron James"^^xsd:string ;
+    ns1:playsFor ns1:Los_Angeles_Lakers ;
+    ns1:weight 113.4 .
+
+ns1:Luka_Doncic a ns1:BasketballPlayer ;
+    ns1:age 24 ;
+    ns1:birthDate "1999-02-28"^^xsd:date ;
+    ns1:hasPosition ns1:Shooting_Guard ;
+    ns1:height 2.01 ;
+    ns1:name "Luka Doncic"^^xsd:string ;
+    ns1:playsFor ns1:Dallas_Mavericks ;
+    ns1:weight 104.3 .
+
+ns1:Nikola_Jokic a ns1:BasketballPlayer ;
+    ns1:age 28 ;
+    ns1:birthDate "1995-02-19"^^xsd:date ;
+    ns1:hasPosition ns1:Center ;
+    ns1:height 2.11 ;
+    ns1:name "Nikola Jokic"^^xsd:string ;
+    ns1:playsFor ns1:Denver_Nuggets ;
+    ns1:weight 129.3 .
+
+ns1:Russell_Westbrook a ns1:BasketballPlayer ;
+    ns1:age 34 ;
+    ns1:birthDate "1988-11-12"^^xsd:date ;
+    ns1:hasPosition ns1:Point_Guard ;
+    ns1:height 1.91 ;
+    ns1:name "Russell Westbrook"^^xsd:string ;
+    ns1:playsFor ns1:Los_Angeles_Lakers ;
+    ns1:weight 90.7 .
+
+ns1:Stephen_Curry a ns1:BasketballPlayer ;
+    ns1:age 35 ;
+    ns1:birthDate "1988-03-14"^^xsd:date ;
+    ns1:hasPosition ns1:Point_Guard ;
+    ns1:height 1.91 ;
+    ns1:name "Stephen Curry"^^xsd:string ;
+    ns1:playsFor ns1:Golden_State_Warriors ;
+    ns1:weight 83.9 .
+
+ns1:Dallas_Mavericks a ns1:Team ;
+    ns1:numberOfChampionships 1 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Denver_Nuggets a ns1:Team ;
+    ns1:numberOfChampionships 0 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Golden_State_Warriors a ns1:Team ;
+    ns1:numberOfChampionships 6 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Los_Angeles_Clippers a ns1:Team ;
+    ns1:numberOfChampionships 0 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Miami_Heat a ns1:Team ;
+    ns1:numberOfChampionships 3 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Milwaukee_Bucks a ns1:Team ;
+    ns1:numberOfChampionships 1 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Phoenix_Suns a ns1:Team ;
+    ns1:numberOfChampionships 0 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Portland_Trail_Blazers a ns1:Team ;
+    ns1:numberOfChampionships 1 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Brooklyn_Nets a ns1:Team ;
+    ns1:numberOfChampionships 2 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Philadelphia_76ers a ns1:Team ;
+    ns1:numberOfChampionships 3 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:Los_Angeles_Lakers a ns1:Team ;
+    ns1:numberOfChampionships 17 ;
+    ns1:playsInLeague ns1:NBA .
+
+ns1:NBA a ns1:League ;
+    ns1:leagueEstablished 1946 .
+

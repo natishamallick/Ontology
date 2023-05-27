@@ -1,0 +1,3077 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/"
+     xml:base="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:nm="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#hasPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsFor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsInLeague -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsInLeague">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthPlace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerEnd">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerStart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#height">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#leagueEstablished -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#leagueEstablished">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#numberOfChampionships -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#numberOfChampionships">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#teamName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#teamName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#weight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/AS_Monaco_Basket -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/AS_Monaco_Basket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Adamson_Soaring_Falcons -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Adamson_Soaring_Falcons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Assistant_Coach -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Assistant_Coach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Assistant_coach -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Assistant_coach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/BC_Delikatesas -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/BC_Delikatesas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/BG_Göttingen -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/BG_Göttingen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Baloncesto_Málaga -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Baloncesto_Málaga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Basketball_Nymburk -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Basketball_Nymburk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Basketball_coach -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Basketball_coach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Becky_Hammon -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Becky_Hammon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Las_Vegas_Aces"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-03-11</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6764</nm:height>
+        <nm:name>Becky Hammon</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61689.6</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Rapid_City,_South_Dakota"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Beno_Udrih -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Beno_Udrih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/New_Orleans_Pelicans"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-07-05</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.905</nm:height>
+        <nm:name>Beno Udrih</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92988.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Celje"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/SR_Slovenia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Biboy_Ravanes -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Biboy_Ravanes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_Coach"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/San_Miguel_Beermen"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-06</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8542</nm:height>
+        <nm:name>Biboy Ravanes</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83916.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Cebu_City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Billy_Donovan -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Billy_Donovan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Chicago_Bulls"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-05-30</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8034</nm:height>
+        <nm:name>Billy Donovan</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77565.6</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Rockville_Centre,_New_York"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Blagota_Sekulić -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Blagota_Sekulić">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Montenegro_national_basketball_team"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-03-14</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.10185</nm:height>
+        <nm:name>Blagota Sekulić</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">116122.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Titograd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Blake_Ahearn -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Blake_Ahearn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Memphis_Grizzlies"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-05-27</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>Blake Ahearn</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86184.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/St._Louis,_Missouri"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Blerim_Mazreku -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Blerim_Mazreku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Sigal_Prishtina"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-10-24</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0574</nm:height>
+        <nm:name>Blerim Mazreku</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">105689.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Suva_Reka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bob_Love -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bob_Love">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Chicago_Bulls"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-12-08</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.032</nm:height>
+        <nm:name>Bob Love</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97524.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Bastrop,_Louisiana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bobby_Frasor -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bobby_Frasor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Brother_Rice_High_School_(Chicago)"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-10-31</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9304</nm:height>
+        <nm:name>Bobby Frasor</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94802.4</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Blue_Island,_Illinois"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bobby_Hurley -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bobby_Hurley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Arizona_State_Sun_Devils_men&apos;s_basketball"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-06-28</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8288</nm:height>
+        <nm:name>Bobby Hurley</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74844.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Jersey_City,_New_Jersey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bobby_Jackson -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bobby_Jackson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Stockton_Kings"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-03-13</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8542</nm:height>
+        <nm:name>Bobby Jackson</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83916.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/East_Spencer,_North_Carolina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bong_Ravena -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bong_Ravena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/TNT_Tropang_Giga"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-05-22</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>Bong Ravena</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88452.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Manila"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Borgie_Hermida -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Borgie_Hermida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/NLEX_Road_Warriors"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-10-27</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7272</nm:height>
+        <nm:name>Borgie Hermida</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72576.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Manila"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Philippines"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Boris_Diaw -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Boris_Diaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Metropolitans_92"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-04-16</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.032</nm:height>
+        <nm:name>Boris Diaw</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">113400.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Cormeilles-en-Parisis"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/LNB_Pro_B"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Val-d&apos;Oise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Boston_Celtics -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Boston_Celtics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Boštjan_Nachbar -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Boštjan_Nachbar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Detroit_Pistons"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-07-03</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0574</nm:height>
+        <nm:name>Boštjan Nachbar</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100246.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/SR_Slovenia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Slovenj_Gradec"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bradley_Beal -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bradley_Beal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Washington_Wizards"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-06-28</nm:birthDate>
+        <nm:careerEnd>Currently active</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9304</nm:height>
+        <nm:name>Bradley Beal</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">93895.2</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/St._Louis,_Missouri"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Brandin_Knight -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brandin_Knight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Rutgers_Scarlet_Knights"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-12-16</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8288</nm:height>
+        <nm:name>Brandin Knight</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81648.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Livingston,_New_Jersey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Brent_Barry -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brent_Barry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/San_Antonio_Spurs"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-12-31</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0066</nm:height>
+        <nm:name>Brent Barry</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95256.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Hempstead_(village),_New_York"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Brian_Shaw -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brian_Shaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Los_Angeles_Clippers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-03-22</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>Brian Shaw</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90720.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Oakland,_California"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Brooklyn_Nets -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brooklyn_Nets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Calbert_Cheaney -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Calbert_Cheaney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Indiana_Pacers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-07-17</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0066</nm:height>
+        <nm:name>Calbert Cheaney</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94802.4</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Evansville,_Indiana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Calvin_Booth -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Calvin_Booth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Denver_Nuggets"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-05-07</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1082</nm:height>
+        <nm:name>Calvin Booth</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104328.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Reynoldsburg,_Ohio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Can_Akın -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Can_Akın">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Türk_Telekom_B.K."/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-30</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.89865</nm:height>
+        <nm:name>Can Akın</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83008.8</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Turkey"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/İstanbul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Caner_Osman -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Caner_Osman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Coach_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Yeşilgiresun_Belediye"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-07-12</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9304</nm:height>
+        <nm:name>Caner Osman</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91627.2</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Ohrid"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Republic_of_Macedonia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Capital_City_Go-Go -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Capital_City_Go-Go">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Carla_Cortijo -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Carla_Cortijo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Coach_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Cangrejeros_de_Santurce_(basketball)"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-07-21</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7272</nm:height>
+        <nm:name>Carla Cortijo</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61236.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Carolina,_Puerto_Rico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Carlos_Jiménez -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Carlos_Jiménez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Sporting_director"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Baloncesto_Málaga"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-02-10</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.05105</nm:height>
+        <nm:name>Carlos Jiménez</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102060.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Madrid"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Spain_men&apos;s_national_basketball_team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Caron_Butler -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Caron_Butler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Miami_Heat"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-03-13</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0066</nm:height>
+        <nm:name>Caron Butler</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">103421.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Racine,_Wisconsin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Chicago_Bulls -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Chicago_Bulls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cleveland_Cavaliers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cleveland_Cavaliers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Dave_Cowens -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dave_Cowens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Boston_Celtics"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-10-25</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0574</nm:height>
+        <nm:name>Dave Cowens</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104328.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Newport,_Kentucky"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/David_McCray -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/David_McCray">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Riesen_Ludwigsburg"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-11-06</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>David McCray</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84823.2</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Speyer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/David_Noel -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/David_Noel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Capital_City_Go-Go"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-02-27</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>David Noel</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104328.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Durham,_North_Carolina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/DeLisha_Milton-Jones -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/DeLisha_Milton-Jones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Old_Dominion_Lady_Monarchs_basketball"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-09-11</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8542</nm:height>
+        <nm:name>Delisha Milton-Jones</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83916.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Riceboro,_Georgia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/DeMarre_Carroll -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/DeMarre_Carroll">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Milwaukee_Bucks"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-07-27</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>DeMarre Carroll</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97524.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Birmingham,_Alabama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/DeSagana_Diop -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/DeSagana_Diop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_Coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Westchester_Knicks"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-01-30</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1336</nm:height>
+        <nm:name>DeSagana Diop</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">127008.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Dakar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Deividas_Dulkys -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Deividas_Dulkys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Memphis_Hustle"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-03-21</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.94945</nm:height>
+        <nm:name>Deividas Dulkys</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88905.6</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Lithuania"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Šilutė"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Dejan_Milojević -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dejan_Milojević">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Golden_State_Warriors"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-04-15</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0066</nm:height>
+        <nm:name>Dejan Milojević</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115214.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Belgrade"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Republic_of_Serbia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Dell_Demps -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dell_Demps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Minnesota_Timberwolves"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-02-12</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.905</nm:height>
+        <nm:name>Dell Demps</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92988.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Long_Beach,_California"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Denver_Nuggets -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Denver_Nuggets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Derrick_Alston -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Derrick_Alston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Westchester_Knicks"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-08-20</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0828</nm:height>
+        <nm:name>Derrick Alston</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102060.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/The_Bronx,_New_York"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Detroit_Pistons -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Detroit_Pistons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Golden_State_Warriors -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Golden_State_Warriors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Guangzhou_Loong_Lions -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Guangzhou_Loong_Lions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Head_Coach -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Head_Coach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Head_coach -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Head_coach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Hu_Xuefeng -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hu_Xuefeng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Jiangsu_Dragons"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-01-14</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8542</nm:height>
+        <nm:name>Hu Xuefeng</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84823.2</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Changshu"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Jiangsu"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Suzhou"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/China_men&apos;s_national_basketball_team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Hubert_Davis -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hubert_Davis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/North_Carolina_Tar_Heels_men&apos;s_basketball"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-05-17</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9558</nm:height>
+        <nm:name>Hubert Davis</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83008.8</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Winston-Salem,_North_Carolina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Indiana_Pacers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Indiana_Pacers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jiangsu_Dragons -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jiangsu_Dragons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/John_Paxson -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/John_Paxson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Chicago_Bulls"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1960-09-29</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>John Paxson</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83916.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Dayton,_Ohio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Johnedel_Cardel -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Johnedel_Cardel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Terrafirma_Dyip"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-06-06</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8542</nm:height>
+        <nm:name>Johnedel Cardel</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81648.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Mandaluyong,_Metro_Manila"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Johnny_Abarrientos -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Johnny_Abarrientos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Coach_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Magnolia_Hotshots"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-07-17</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7018</nm:height>
+        <nm:name>Johnny Abarrientos</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73029.6</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Naga,_Camarines_Sur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Johnny_Dawkins -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Johnny_Dawkins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/UCF_Knights_men&apos;s_basketball"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-09-28</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>Johnny Dawkins</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74844.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Washington,_D.C."/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jon_Diebler -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jon_Diebler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Butler_Bulldogs_men&apos;s_basketball"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-06-22</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>Jon Diebler</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92988.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Sylvania,_Ohio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jon_Scheyer -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jon_Scheyer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Duke_Blue_Devils_men&apos;s_basketball"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-08-24</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9558</nm:height>
+        <nm:name>Jon Scheyer</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86184.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Northbrook,_Illinois"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jonas_Valančiūnas -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jonas_Valančiūnas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/New_Orleans_Pelicans"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-05-06</nm:birthDate>
+        <nm:careerEnd>Currently active</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1082</nm:height>
+        <nm:name>Jonas Valančiūnas</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120204.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Lithuania"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Utena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jordan_Sibert -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jordan_Sibert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/P.A.O.K._BC"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-08-01</nm:birthDate>
+        <nm:careerEnd>Currently active</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9304</nm:height>
+        <nm:name>Jordan Sibert</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84823.2</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Cincinnati"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Joseph_Blair -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Joseph_Blair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Basketball_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Washington_Wizards"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-12</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.10185</nm:height>
+        <nm:name>Joseph Blair</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120204.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Akron,_Ohio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Josip_Sesar -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Josip_Sesar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/KK_Cibona"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-01-17</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>Josip Sesar</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91627.2</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Mostar"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Republic_of_Bosnia_and_Herzegovina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Juan_Antonio_Orenga -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Juan_Antonio_Orenga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Coach_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Guangzhou_Loong_Lions"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-07-29</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0701</nm:height>
+        <nm:name>Juan Antonio Orenga</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">113400.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Castellón_de_la_Plana"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Spain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/KK_Cedevita_Olimpija -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/KK_Cedevita_Olimpija">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/KK_Cibona -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/KK_Cibona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Lakeland_Magic -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lakeland_Magic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Las_Vegas_Aces -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Las_Vegas_Aces">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Los_Angeles_Clippers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Los_Angeles_Clippers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Magnolia_Hotshots -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Magnolia_Hotshots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Memphis_Grizzlies -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Memphis_Grizzlies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Memphis_Hustle -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Memphis_Hustle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Meralco_Bolts -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Meralco_Bolts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Metropolitans_92 -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Metropolitans_92">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Miami_Heat -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Miami_Heat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Milwaukee_Bucks -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Milwaukee_Bucks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Minnesota_Timberwolves -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Minnesota_Timberwolves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Montenegro_national_basketball_team -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Montenegro_national_basketball_team">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/NLEX_Road_Warriors -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/NLEX_Road_Warriors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/New_Orleans_Pelicans -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/New_Orleans_Pelicans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/New_York_Liberty -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/New_York_Liberty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Old_Dominion_Lady_Monarchs_basketball -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Old_Dominion_Lady_Monarchs_basketball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/P.A.O.K._BC -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/P.A.O.K._BC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Philadelphia_76ers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Philadelphia_76ers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Phoenix_Suns -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Phoenix_Suns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Point_guard -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Point_guard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Portland_Trail_Blazers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Portland_Trail_Blazers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Primož_Brezec -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Primož_Brezec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Cleveland_Cavaliers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-10-02</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.159</nm:height>
+        <nm:name>Primož Brezec</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115668.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Postojna"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/SFR_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/SR_Slovenia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Quincy_Acy -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Quincy_Acy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Coach_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Texas_Legends"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-10-06</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0066</nm:height>
+        <nm:name>Quincy Acy</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108864.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Tyler,_Texas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Riesen_Ludwigsburg -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Riesen_Ludwigsburg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Robert_Sacre -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Robert_Sacre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Vancouver_Bandits"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-06-06</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1336</nm:height>
+        <nm:name>Robert Sacre</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">122472.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Baton_Rouge,_Louisiana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Robertas_Giedraitis -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Robertas_Giedraitis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/BC_Delikatesas"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-08-29</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9304</nm:height>
+        <nm:name>Robertas Giedraitis</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86184.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Kaunas"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Lithuanian_Soviet_Socialist_Republic"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Soviet_Union"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Roberts_Štelmahers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Roberts_Štelmahers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Basketball_Nymburk"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-11-19</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.905</nm:height>
+        <nm:name>Roberts Štelmahers</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87998.4</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Latvian_Soviet_Socialist_Republic"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Riga"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Soviet_Union"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rodney_Billups -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rodney_Billups">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Guard_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Portland_Trail_Blazers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-01-14</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.778</nm:height>
+        <nm:name>Rodney Billups</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74844.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Denver,_Colorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rodney_Santos -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rodney_Santos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/UST_Growling_Tigers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-05-30</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>Rodney Santos</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79380.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Bulacan"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Meycauayan"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Philippines"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Roel_Moors -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Roel_Moors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/BG_Göttingen"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-12-16</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.905</nm:height>
+        <nm:name>Roel Moors</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94802.4</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Belgium"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Herentals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rommel_Adducul -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rommel_Adducul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Adamson_Soaring_Falcons"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-04-21</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>Rommel Adducul</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104328.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Philippines"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Tuguegarao,_Cagayan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ronald_Tubid -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ronald_Tubid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Terrafirma_Dyip"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-10-15</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8542</nm:height>
+        <nm:name>Ronald Tubid</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83916.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Iloilo_City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Roneeka_Hodges -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Roneeka_Hodges">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/New_York_Liberty"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-07-19</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8034</nm:height>
+        <nm:name>Roneeka Hodges</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74844.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/New_Orleans,_Louisiana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ronnie_Burrell -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ronnie_Burrell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Chicago_Bulls"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-07-21</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0574</nm:height>
+        <nm:name>Ronnie Burrell</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">106596.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Livingston,_New_Jersey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ronnie_Magsanoc -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ronnie_Magsanoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Meralco_Bolts"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-04-11</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7526</nm:height>
+        <nm:name>Ronnie Magsanoc</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70308.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Philippines"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ronnie_Price -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ronnie_Price">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Phoenix_Suns"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-06-21</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>Ronnie Price</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86184.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Friendswood,_Texas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Roy_Hibbert -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Roy_Hibbert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Philadelphia_76ers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-11</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1844</nm:height>
+        <nm:name>Roy Hibbert</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">122472.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Queens,_New_York"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Royal_Ivey -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Royal_Ivey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Brooklyn_Nets"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-12-20</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9304</nm:height>
+        <nm:name>Royal Ivey</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97524.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Harlem,_New_York"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rudy_Gobert -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rudy_Gobert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Minnesota_Timberwolves"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-06-26</nm:birthDate>
+        <nm:careerEnd>Currently active</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.159</nm:height>
+        <nm:name>Rudy Gobert</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">117029.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Saint-Quentin,_Aisne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rudy_Tomjanovich -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rudy_Tomjanovich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Minnesota_Timberwolves"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-11-24</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.032</nm:height>
+        <nm:name>Rudy Tomjanovich</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">103421.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Hamtramck,_Michigan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rutgers_Scarlet_Knights -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Rutgers_Scarlet_Knights">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sacramento_Kings -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sacramento_Kings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sam_Cassell -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sam_Cassell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Philadelphia_76ers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-11-18</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.905</nm:height>
+        <nm:name>Sam Cassell</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83916.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Baltimore,_Maryland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Samir_Selešković -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Samir_Selešković">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Assistant_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Türk_Telekom_B.K."/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-04-10</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8796</nm:height>
+        <nm:name>Samir Selešković</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90720.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/SFR_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Sarajevo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/San_Antonio_Spurs -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/San_Antonio_Spurs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/San_Miguel_Beermen -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/San_Miguel_Beermen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sandy_Brondello -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sandy_Brondello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Head_Coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/New_York_Liberty"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-08-20</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7018</nm:height>
+        <nm:name>Sandy Brondello</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61689.6</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Mackay,_Queensland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sani_Bečirovič -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sani_Bečirovič">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Sporting_director"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/KK_Cedevita_Olimpija"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-05-19</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9558</nm:height>
+        <nm:name>Sani Bečirovič</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95256.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Maribor"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Republic_of_Slovenia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Saša_Obradović -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Saša_Obradović">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Coach_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/AS_Monaco_Basket"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-01-29</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.97485</nm:height>
+        <nm:name>Saša Obradović</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94000.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Belgrade"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia"/>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Socialist_Republic_of_Serbia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Scoonie_Penn -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Scoonie_Penn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Basketball_coach"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Memphis_Grizzlies"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-01-09</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8034</nm:height>
+        <nm:name>Scoonie Penn</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81648.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Yonkers,_New_York"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Scott_Brooks -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Scott_Brooks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Portland_Trail_Blazers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-07-31</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8034</nm:height>
+        <nm:name>Scott Brooks</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81648.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/French_Camp,_California"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Scott_Roth -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Scott_Roth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Tasmania_JackJumpers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-06-03</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.032</nm:height>
+        <nm:name>Scott Roth</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96163.2</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Cleveland,_Ohio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Shooting_guard -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Shooting_guard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sigal_Prishtina -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sigal_Prishtina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Small_forward -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Small_forward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Sporting_director -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sporting_director">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Stockton_Kings -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Stockton_Kings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Stretch_four -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Stretch_four">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/TNT_Tropang_Giga -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/TNT_Tropang_Giga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Tasmania_JackJumpers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tasmania_JackJumpers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Terrafirma_Dyip -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Terrafirma_Dyip">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Texas_Legends -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Texas_Legends">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Türk_Telekom_B.K. -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Türk_Telekom_B.K.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/UST_Growling_Tigers -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/UST_Growling_Tigers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Vancouver_Bandits -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Vancouver_Bandits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Washington_Wizards -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Washington_Wizards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Westchester_Knicks -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Westchester_Knicks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Windsor_Express -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Windsor_Express">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Windy_City_Bulls -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Windy_City_Bulls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Yeşilgiresun_Belediye -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Yeşilgiresun_Belediye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Arizona_State_Sun_Devils_men&apos;s_basketball -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Arizona_State_Sun_Devils_men&apos;s_basketball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ben_Sullivan_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ben_Sullivan_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Boston_Celtics"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-03-19</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0828</nm:height>
+        <nm:name>Ben Sullivan</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108864.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Boston"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ben_Wallace_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ben_Wallace_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Center_(basketball)"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Detroit_Pistons"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-09-10</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0574</nm:height>
+        <nm:name>Ben Wallace</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108864.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/White_Hall,_Alabama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Bill_Jones_(basketball,_born_1966) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Bill_Jones_(basketball,_born_1966)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Windsor_Express"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-03-18</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0066</nm:height>
+        <nm:name>Bill Jones</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79380.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Detroit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Brandon_Williams_(basketball,_born_1975) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brandon_Williams_(basketball,_born_1975)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Shooting_guard"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Sacramento_Kings"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-02-27</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>Brandon Williams</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97524.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Collinston,_Louisiana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Brother_Rice_High_School_(Chicago) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brother_Rice_High_School_(Chicago)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Butler_Bulldogs_men&apos;s_basketball -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Butler_Bulldogs_men&apos;s_basketball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cangrejeros_de_Santurce_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cangrejeros_de_Santurce_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Center_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Center_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Coach_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Coach_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/David_McClure_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/David_McClure_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Stretch_four"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Memphis_Grizzlies"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-04-01</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>David McClure</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97524.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Danbury,_Connecticut"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Duke_Blue_Devils_men&apos;s_basketball -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Duke_Blue_Devils_men&apos;s_basketball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Forward_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Forward_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Guard_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Guard_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Johnny_Taylor_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Johnny_Taylor_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Small_forward"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Lakeland_Magic"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-04</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0574</nm:height>
+        <nm:name>Johnny Taylor</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99792.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Chattanooga,_Tennessee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Jordan_Brady_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jordan_Brady_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Windy_City_Bulls"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-06-21</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9812</nm:height>
+        <nm:name>Jordan Brady</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95256.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Vernal,_Utah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/José_Calderón_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/José_Calderón_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Point_guard"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Cleveland_Cavaliers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-09-28</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.905</nm:height>
+        <nm:name>José Calderón</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90720.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Villanueva_de_la_Serena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/North_Carolina_Tar_Heels_men&apos;s_basketball -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/North_Carolina_Tar_Heels_men&apos;s_basketball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Power_forward_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Power_forward_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Roy_Rogers_(basketball) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Roy_Rogers_(basketball)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://dbpedia.org/resource/Power_forward_(basketball)"/>
+        <nm:playsFor rdf:resource="http://dbpedia.org/resource/Portland_Trail_Blazers"/>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-08-19</nm:birthDate>
+        <nm:careerEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-01-01</nm:careerEnd>
+        <nm:careerStart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</nm:careerStart>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0828</nm:height>
+        <nm:name>Roy Rogers</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">106596.0</nm:weight>
+        <nm:birthPlace rdf:resource="http://dbpedia.org/resource/Linden,_Alabama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/UCF_Knights_men&apos;s_basketball -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/UCF_Knights_men&apos;s_basketball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Anthony_Davis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Anthony_Davis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Power_Forward"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Lakers"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-11</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.08</nm:height>
+        <nm:name>Anthony Davis</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115.7</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Brooklyn_Nets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Brooklyn_Nets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Center -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Chris_Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Chris_Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Point_Guard"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Phoenix_Suns"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-05-06</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.83</nm:height>
+        <nm:name>Chris Paul</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79.4</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Dallas_Mavericks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Dallas_Mavericks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Damian_Lillard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Damian_Lillard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Point_Guard"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Portland_Trail_Blazers"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-07-15</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.88</nm:height>
+        <nm:name>Damian Lillard</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88.5</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Denver_Nuggets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Denver_Nuggets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Giannis_Antetokounmpo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Giannis_Antetokounmpo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Power_Forward"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Milwaukee_Bucks"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-12-06</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.11</nm:height>
+        <nm:name>Giannis Antetokounmpo</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110.2</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Golden_State_Warriors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Golden_State_Warriors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#James_Harden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#James_Harden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Shooting_Guard"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Philadelphia_76ers"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-08-26</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.96</nm:height>
+        <nm:name>James Harden</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.8</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Jimmy_Butler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Jimmy_Butler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Small_Forward"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Miami_Heat"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-09-14</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.01</nm:height>
+        <nm:name>Jimmy Butler</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104.3</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Joel_Embiid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Joel_Embiid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Center"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Philadelphia_76ers"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-03-16</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.13</nm:height>
+        <nm:name>Joel Embiid</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">127.0</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Kawhi_Leonard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Kawhi_Leonard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Small_Forward"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Clippers"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-06-29</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.01</nm:height>
+        <nm:name>Kawhi Leonard</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102.1</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Kevin_Durant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Kevin_Durant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Small_Forward"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Brooklyn_Nets"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-09-29</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.08</nm:height>
+        <nm:name>Kevin Durant</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">108.0</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Kyrie_Irving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Kyrie_Irving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Point_Guard"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Brooklyn_Nets"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-03-23</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.91</nm:height>
+        <nm:name>Kyrie Irving</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88.5</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#LeBron_James -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#LeBron_James">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Small_Forward"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Lakers"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-30</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.06</nm:height>
+        <nm:name>LeBron James</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">113.4</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Clippers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Clippers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Lakers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Lakers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Luka_Doncic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Luka_Doncic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Shooting_Guard"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Dallas_Mavericks"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-02-28</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.01</nm:height>
+        <nm:name>Luka Doncic</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">104.3</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Miami_Heat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Miami_Heat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Milwaukee_Bucks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Milwaukee_Bucks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League"/>
+        <nm:leagueEstablished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1946</nm:leagueEstablished>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Nikola_Jokic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Nikola_Jokic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Center"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Denver_Nuggets"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-02-19</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.11</nm:height>
+        <nm:name>Nikola Jokic</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.3</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Philadelphia_76ers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Philadelphia_76ers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Phoenix_Suns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Phoenix_Suns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Point_Guard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Point_Guard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Portland_Trail_Blazers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Portland_Trail_Blazers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <nm:playsInLeague rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#NBA"/>
+        <nm:numberOfChampionships rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</nm:numberOfChampionships>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Power_Forward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Power_Forward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Russell_Westbrook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Russell_Westbrook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Point_Guard"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Los_Angeles_Lakers"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-11-12</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.91</nm:height>
+        <nm:name>Russell Westbrook</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.7</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Shooting_Guard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Shooting_Guard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Small_Forward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Small_Forward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Stephen_Curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Stephen_Curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+        <nm:hasPosition rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Point_Guard"/>
+        <nm:playsFor rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Golden_State_Warriors"/>
+        <nm:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</nm:age>
+        <nm:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-03-14</nm:birthDate>
+        <nm:height rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.91</nm:height>
+        <nm:name>Stephen Curry</nm:name>
+        <nm:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83.9</nm:weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Tall Player</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#height"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1.8</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Short Player</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#height"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1.8</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

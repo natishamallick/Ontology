@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/"
+     xml:base="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:nm="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM">
+        <owl:imports rdf:resource="file:/C:/Users/Natisha/Downloads/basketballNM_dbpedia_dump.ttl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#hasPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsFor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsInLeague -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#playsInLeague">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthPlace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#birthPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerEnd">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#careerStart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#height">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#leagueEstablished -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#leagueEstablished">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#numberOfChampionships -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#numberOfChampionships">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#teamName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#teamName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#weight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#BasketballPlayer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#League"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#ShortPlayer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#TallPlayer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#Team"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

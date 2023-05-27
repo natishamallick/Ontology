@@ -1,0 +1,1016 @@
+@prefix NM: <http://www.semanticweb.org/natishamallick/ontologies/2023/basketballNM#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/resource/Becky_Hammon> a NM:BasketballPlayer ;
+    NM:birthDate "1977-03-11"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Rapid_City,_South_Dakota> ;
+    NM:careerEnd "2014-01-01"^^xsd:date ;
+    NM:careerStart "1999-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.6764 ;
+    NM:name "Becky Hammon" ;
+    NM:playsFor <http://dbpedia.org/resource/Las_Vegas_Aces> ;
+    NM:weight 61689.6 .
+
+<http://dbpedia.org/resource/Ben_Sullivan_(basketball)> a NM:BasketballPlayer ;
+    NM:birthDate "1984-03-19"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Boston> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "2007-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 2.0828 ;
+    NM:name "Ben Sullivan" ;
+    NM:playsFor <http://dbpedia.org/resource/Boston_Celtics> ;
+    NM:weight 108864.0 .
+
+<http://dbpedia.org/resource/Ben_Wallace_(basketball)> a NM:BasketballPlayer ;
+    NM:birthDate "1974-09-10"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/White_Hall,_Alabama> ;
+    NM:careerEnd "2012-01-01"^^xsd:date ;
+    NM:careerStart "1996-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.0574 ;
+    NM:name "Ben Wallace" ;
+    NM:playsFor <http://dbpedia.org/resource/Detroit_Pistons> ;
+    NM:weight 108864.0 .
+
+<http://dbpedia.org/resource/Beno_Udrih> a NM:BasketballPlayer ;
+    NM:birthDate "1982-07-05"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Celje>,
+        <http://dbpedia.org/resource/SR_Slovenia>,
+        <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia> ;
+    NM:careerEnd "2018-01-01"^^xsd:date ;
+    NM:careerStart "1997-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.905 ;
+    NM:name "Beno Udrih" ;
+    NM:playsFor <http://dbpedia.org/resource/New_Orleans_Pelicans> ;
+    NM:weight 92988.0 .
+
+<http://dbpedia.org/resource/Biboy_Ravanes> a NM:BasketballPlayer ;
+    NM:birthDate "1959-01-06"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Cebu_City> ;
+    NM:careerEnd "1994-01-01"^^xsd:date ;
+    NM:careerStart "1979-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_Coach> ;
+    NM:height 1.8542 ;
+    NM:name "Biboy Ravanes" ;
+    NM:playsFor <http://dbpedia.org/resource/San_Miguel_Beermen> ;
+    NM:weight 83916.0 .
+
+<http://dbpedia.org/resource/Bill_Jones_(basketball,_born_1966)> a NM:BasketballPlayer ;
+    NM:birthDate "1966-03-18"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Detroit> ;
+    NM:careerEnd "2001-01-01"^^xsd:date ;
+    NM:careerStart "1988-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.0066 ;
+    NM:name "Bill Jones" ;
+    NM:playsFor <http://dbpedia.org/resource/Windsor_Express> ;
+    NM:weight 79380.0 .
+
+<http://dbpedia.org/resource/Billy_Donovan> a NM:BasketballPlayer ;
+    NM:birthDate "1965-05-30"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Rockville_Centre,_New_York> ;
+    NM:careerEnd "1989-01-01"^^xsd:date ;
+    NM:careerStart "1987-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8034 ;
+    NM:name "Billy Donovan" ;
+    NM:playsFor <http://dbpedia.org/resource/Chicago_Bulls> ;
+    NM:weight 77565.6 .
+
+<http://dbpedia.org/resource/Blagota_Sekulić> a NM:BasketballPlayer ;
+    NM:birthDate "1982-03-14"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia>,
+        <http://dbpedia.org/resource/Titograd> ;
+    NM:careerEnd "2019-01-01"^^xsd:date ;
+    NM:careerStart "1998-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.10185 ;
+    NM:name "Blagota Sekulić" ;
+    NM:playsFor <http://dbpedia.org/resource/Montenegro_national_basketball_team> ;
+    NM:weight 116122.0 .
+
+<http://dbpedia.org/resource/Blake_Ahearn> a NM:BasketballPlayer ;
+    NM:birthDate "1984-05-27"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/St._Louis,_Missouri> ;
+    NM:careerEnd "2015-01-01"^^xsd:date ;
+    NM:careerStart "2007-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8796 ;
+    NM:name "Blake Ahearn" ;
+    NM:playsFor <http://dbpedia.org/resource/Memphis_Grizzlies> ;
+    NM:weight 86184.0 .
+
+<http://dbpedia.org/resource/Blerim_Mazreku> a NM:BasketballPlayer ;
+    NM:birthDate "1981-10-24"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia>,
+        <http://dbpedia.org/resource/Suva_Reka> ;
+    NM:careerEnd "2015-01-01"^^xsd:date ;
+    NM:careerStart "2001-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.0574 ;
+    NM:name "Blerim Mazreku" ;
+    NM:playsFor <http://dbpedia.org/resource/Sigal_Prishtina> ;
+    NM:weight 105689.0 .
+
+<http://dbpedia.org/resource/Bob_Love> a NM:BasketballPlayer ;
+    NM:birthDate "1942-12-08"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Bastrop,_Louisiana> ;
+    NM:careerEnd "1977-01-01"^^xsd:date ;
+    NM:careerStart "1965-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.032 ;
+    NM:name "Bob Love" ;
+    NM:playsFor <http://dbpedia.org/resource/Chicago_Bulls> ;
+    NM:weight 97524.0 .
+
+<http://dbpedia.org/resource/Bobby_Frasor> a NM:BasketballPlayer ;
+    NM:birthDate "1986-10-31"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Blue_Island,_Illinois> ;
+    NM:careerEnd "2011-01-01"^^xsd:date ;
+    NM:careerStart "2009-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9304 ;
+    NM:name "Bobby Frasor" ;
+    NM:playsFor <http://dbpedia.org/resource/Brother_Rice_High_School_(Chicago)> ;
+    NM:weight 94802.4 .
+
+<http://dbpedia.org/resource/Bobby_Hurley> a NM:BasketballPlayer ;
+    NM:birthDate "1971-06-28"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Jersey_City,_New_Jersey> ;
+    NM:careerEnd "1998-01-01"^^xsd:date ;
+    NM:careerStart "1993-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Head_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8288 ;
+    NM:name "Bobby Hurley" ;
+    NM:playsFor <http://dbpedia.org/resource/Arizona_State_Sun_Devils_men's_basketball> ;
+    NM:weight 74844.0 .
+
+<http://dbpedia.org/resource/Bobby_Jackson> a NM:BasketballPlayer ;
+    NM:birthDate "1973-03-13"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/East_Spencer,_North_Carolina> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "1997-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8542 ;
+    NM:name "Bobby Jackson" ;
+    NM:playsFor <http://dbpedia.org/resource/Stockton_Kings> ;
+    NM:weight 83916.0 .
+
+<http://dbpedia.org/resource/Bong_Ravena> a NM:BasketballPlayer ;
+    NM:birthDate "1970-05-22"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Manila> ;
+    NM:careerEnd "2005-01-01"^^xsd:date ;
+    NM:careerStart "1992-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach> ;
+    NM:height 1.8796 ;
+    NM:name "Bong Ravena" ;
+    NM:playsFor <http://dbpedia.org/resource/TNT_Tropang_Giga> ;
+    NM:weight 88452.0 .
+
+<http://dbpedia.org/resource/Borgie_Hermida> a NM:BasketballPlayer ;
+    NM:birthDate "1988-10-27"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Manila>,
+        <http://dbpedia.org/resource/Philippines> ;
+    NM:careerEnd "2016-01-01"^^xsd:date ;
+    NM:careerStart "2010-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.7272 ;
+    NM:name "Borgie Hermida" ;
+    NM:playsFor <http://dbpedia.org/resource/NLEX_Road_Warriors> ;
+    NM:weight 72576.0 .
+
+<http://dbpedia.org/resource/Boris_Diaw> a NM:BasketballPlayer ;
+    NM:birthDate "1982-04-16"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Cormeilles-en-Parisis>,
+        <http://dbpedia.org/resource/LNB_Pro_B>,
+        <http://dbpedia.org/resource/Val-d'Oise> ;
+    NM:careerEnd "2018-01-01"^^xsd:date ;
+    NM:careerStart "2001-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.032 ;
+    NM:name "Boris Diaw" ;
+    NM:playsFor <http://dbpedia.org/resource/Metropolitans_92> ;
+    NM:weight 113400.0 .
+
+<http://dbpedia.org/resource/Boštjan_Nachbar> a NM:BasketballPlayer ;
+    NM:birthDate "1980-07-03"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/SR_Slovenia>,
+        <http://dbpedia.org/resource/Slovenj_Gradec>,
+        <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia> ;
+    NM:careerEnd "2017-01-01"^^xsd:date ;
+    NM:careerStart "1997-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Power_forward_(basketball)>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.0574 ;
+    NM:name "Boštjan Nachbar" ;
+    NM:playsFor <http://dbpedia.org/resource/Detroit_Pistons> ;
+    NM:weight 100246.0 .
+
+<http://dbpedia.org/resource/Bradley_Beal> a NM:BasketballPlayer ;
+    NM:birthDate "1993-06-28"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/St._Louis,_Missouri> ;
+    NM:careerEnd "Currently active" ;
+    NM:careerStart "2012-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9304 ;
+    NM:name "Bradley Beal" ;
+    NM:playsFor <http://dbpedia.org/resource/Washington_Wizards> ;
+    NM:weight 93895.2 .
+
+<http://dbpedia.org/resource/Brandin_Knight> a NM:BasketballPlayer ;
+    NM:birthDate "1981-12-16"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Livingston,_New_Jersey> ;
+    NM:careerEnd "2005-01-01"^^xsd:date ;
+    NM:careerStart "2003-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8288 ;
+    NM:name "Brandin Knight" ;
+    NM:playsFor <http://dbpedia.org/resource/Rutgers_Scarlet_Knights> ;
+    NM:weight 81648.0 .
+
+<http://dbpedia.org/resource/Brandon_Williams_(basketball,_born_1975)> a NM:BasketballPlayer ;
+    NM:birthDate "1975-02-27"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Collinston,_Louisiana> ;
+    NM:careerEnd "2005-01-01"^^xsd:date ;
+    NM:careerStart "1997-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.9812 ;
+    NM:name "Brandon Williams" ;
+    NM:playsFor <http://dbpedia.org/resource/Sacramento_Kings> ;
+    NM:weight 97524.0 .
+
+<http://dbpedia.org/resource/Brent_Barry> a NM:BasketballPlayer ;
+    NM:birthDate "1971-12-31"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Hempstead_(village),_New_York> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "1995-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 2.0066 ;
+    NM:name "Brent Barry" ;
+    NM:playsFor <http://dbpedia.org/resource/San_Antonio_Spurs> ;
+    NM:weight 95256.0 .
+
+<http://dbpedia.org/resource/Brian_Shaw> a NM:BasketballPlayer ;
+    NM:birthDate "1966-03-22"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Oakland,_California> ;
+    NM:careerEnd "2003-01-01"^^xsd:date ;
+    NM:careerStart "1988-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9812 ;
+    NM:name "Brian Shaw" ;
+    NM:playsFor <http://dbpedia.org/resource/Los_Angeles_Clippers> ;
+    NM:weight 90720.0 .
+
+<http://dbpedia.org/resource/Calbert_Cheaney> a NM:BasketballPlayer ;
+    NM:birthDate "1971-07-17"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Evansville,_Indiana> ;
+    NM:careerEnd "2006-01-01"^^xsd:date ;
+    NM:careerStart "1993-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.0066 ;
+    NM:name "Calbert Cheaney" ;
+    NM:playsFor <http://dbpedia.org/resource/Indiana_Pacers> ;
+    NM:weight 94802.4 .
+
+<http://dbpedia.org/resource/Calvin_Booth> a NM:BasketballPlayer ;
+    NM:birthDate "1976-05-07"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Reynoldsburg,_Ohio> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "1999-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.1082 ;
+    NM:name "Calvin Booth" ;
+    NM:playsFor <http://dbpedia.org/resource/Denver_Nuggets> ;
+    NM:weight 104328.0 .
+
+<http://dbpedia.org/resource/Can_Akın> a NM:BasketballPlayer ;
+    NM:birthDate "1983-01-30"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Turkey>,
+        <http://dbpedia.org/resource/İstanbul> ;
+    NM:careerEnd "2021-01-01"^^xsd:date ;
+    NM:careerStart "2002-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.89865 ;
+    NM:name "Can Akın" ;
+    NM:playsFor <http://dbpedia.org/resource/Türk_Telekom_B.K.> ;
+    NM:weight 83008.8 .
+
+<http://dbpedia.org/resource/Caner_Osman> a NM:BasketballPlayer ;
+    NM:birthDate "1991-07-12"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Ohrid>,
+        <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia>,
+        <http://dbpedia.org/resource/Socialist_Republic_of_Macedonia> ;
+    NM:careerEnd "2015-01-01"^^xsd:date ;
+    NM:careerStart "2009-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Coach_(basketball)>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.9304 ;
+    NM:name "Caner Osman" ;
+    NM:playsFor <http://dbpedia.org/resource/Yeşilgiresun_Belediye> ;
+    NM:weight 91627.2 .
+
+<http://dbpedia.org/resource/Carla_Cortijo> a NM:BasketballPlayer ;
+    NM:birthDate "1987-07-21"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Carolina,_Puerto_Rico> ;
+    NM:careerEnd "2018-01-01"^^xsd:date ;
+    NM:careerStart "2008-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Coach_(basketball)>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.7272 ;
+    NM:name "Carla Cortijo" ;
+    NM:playsFor <http://dbpedia.org/resource/Cangrejeros_de_Santurce_(basketball)> ;
+    NM:weight 61236.0 .
+
+<http://dbpedia.org/resource/Carlos_Jiménez> a NM:BasketballPlayer ;
+    NM:birthDate "1976-02-10"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Madrid>,
+        <http://dbpedia.org/resource/Spain_men's_national_basketball_team> ;
+    NM:careerEnd "2012-01-01"^^xsd:date ;
+    NM:careerStart "1994-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward>,
+        <http://dbpedia.org/resource/Sporting_director> ;
+    NM:height 2.05105 ;
+    NM:name "Carlos Jiménez" ;
+    NM:playsFor <http://dbpedia.org/resource/Baloncesto_Málaga> ;
+    NM:weight 102060.0 .
+
+<http://dbpedia.org/resource/Caron_Butler> a NM:BasketballPlayer ;
+    NM:birthDate "1980-03-13"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Racine,_Wisconsin> ;
+    NM:careerEnd "2016-01-01"^^xsd:date ;
+    NM:careerStart "2002-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.0066 ;
+    NM:name "Caron Butler" ;
+    NM:playsFor <http://dbpedia.org/resource/Miami_Heat> ;
+    NM:weight 103421.0 .
+
+<http://dbpedia.org/resource/Dave_Cowens> a NM:BasketballPlayer ;
+    NM:birthDate "1948-10-25"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Newport,_Kentucky> ;
+    NM:careerEnd "1983-01-01"^^xsd:date ;
+    NM:careerStart "1970-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 2.0574 ;
+    NM:name "Dave Cowens" ;
+    NM:playsFor <http://dbpedia.org/resource/Boston_Celtics> ;
+    NM:weight 104328.0 .
+
+<http://dbpedia.org/resource/David_McClure_(basketball)> a NM:BasketballPlayer ;
+    NM:birthDate "1986-04-01"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Danbury,_Connecticut> ;
+    NM:careerEnd "2014-01-01"^^xsd:date ;
+    NM:careerStart "2009-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Stretch_four> ;
+    NM:height 1.9812 ;
+    NM:name "David McClure" ;
+    NM:playsFor <http://dbpedia.org/resource/Memphis_Grizzlies> ;
+    NM:weight 97524.0 .
+
+<http://dbpedia.org/resource/David_McCray> a NM:BasketballPlayer ;
+    NM:birthDate "1986-11-06"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Speyer> ;
+    NM:careerEnd "2019-01-01"^^xsd:date ;
+    NM:careerStart "2003-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8796 ;
+    NM:name "David McCray" ;
+    NM:playsFor <http://dbpedia.org/resource/Riesen_Ludwigsburg> ;
+    NM:weight 84823.2 .
+
+<http://dbpedia.org/resource/David_Noel> a NM:BasketballPlayer ;
+    NM:birthDate "1984-02-27"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Durham,_North_Carolina> ;
+    NM:careerEnd "2017-01-01"^^xsd:date ;
+    NM:careerStart "2006-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.9812 ;
+    NM:name "David Noel" ;
+    NM:playsFor <http://dbpedia.org/resource/Capital_City_Go-Go> ;
+    NM:weight 104328.0 .
+
+<http://dbpedia.org/resource/DeLisha_Milton-Jones> a NM:BasketballPlayer ;
+    NM:birthDate "1974-09-11"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Riceboro,_Georgia> ;
+    NM:careerEnd "2015-01-01"^^xsd:date ;
+    NM:careerStart "1999-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Head_coach>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.8542 ;
+    NM:name "Delisha Milton-Jones" ;
+    NM:playsFor <http://dbpedia.org/resource/Old_Dominion_Lady_Monarchs_basketball> ;
+    NM:weight 83916.0 .
+
+<http://dbpedia.org/resource/DeMarre_Carroll> a NM:BasketballPlayer ;
+    NM:birthDate "1986-07-27"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Birmingham,_Alabama> ;
+    NM:careerEnd "2020-01-01"^^xsd:date ;
+    NM:careerStart "2009-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.9812 ;
+    NM:name "DeMarre Carroll" ;
+    NM:playsFor <http://dbpedia.org/resource/Milwaukee_Bucks> ;
+    NM:weight 97524.0 .
+
+<http://dbpedia.org/resource/DeSagana_Diop> a NM:BasketballPlayer ;
+    NM:birthDate "1982-01-30"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Dakar> ;
+    NM:careerEnd "2013-01-01"^^xsd:date ;
+    NM:careerStart "2001-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Head_Coach> ;
+    NM:height 2.1336 ;
+    NM:name "DeSagana Diop" ;
+    NM:playsFor <http://dbpedia.org/resource/Westchester_Knicks> ;
+    NM:weight 127008.0 .
+
+<http://dbpedia.org/resource/Deividas_Dulkys> a NM:BasketballPlayer ;
+    NM:birthDate "1988-03-21"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Lithuania>,
+        <http://dbpedia.org/resource/Šilutė> ;
+    NM:careerEnd "2021-01-01"^^xsd:date ;
+    NM:careerStart "2012-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.94945 ;
+    NM:name "Deividas Dulkys" ;
+    NM:playsFor <http://dbpedia.org/resource/Memphis_Hustle> ;
+    NM:weight 88905.6 .
+
+<http://dbpedia.org/resource/Dejan_Milojević> a NM:BasketballPlayer ;
+    NM:birthDate "1977-04-15"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Belgrade>,
+        <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia>,
+        <http://dbpedia.org/resource/Socialist_Republic_of_Serbia> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "1994-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.0066 ;
+    NM:name "Dejan Milojević" ;
+    NM:playsFor <http://dbpedia.org/resource/Golden_State_Warriors> ;
+    NM:weight 115214.0 .
+
+<http://dbpedia.org/resource/Dell_Demps> a NM:BasketballPlayer ;
+    NM:birthDate "1970-02-12"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Long_Beach,_California> ;
+    NM:careerEnd "2000-01-01"^^xsd:date ;
+    NM:careerStart "1992-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.905 ;
+    NM:name "Dell Demps" ;
+    NM:playsFor <http://dbpedia.org/resource/Minnesota_Timberwolves> ;
+    NM:weight 92988.0 .
+
+<http://dbpedia.org/resource/Derrick_Alston> a NM:BasketballPlayer ;
+    NM:birthDate "1972-08-20"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/The_Bronx,_New_York> ;
+    NM:careerEnd "2012-01-01"^^xsd:date ;
+    NM:careerStart "1994-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Head_coach>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.0828 ;
+    NM:name "Derrick Alston" ;
+    NM:playsFor <http://dbpedia.org/resource/Westchester_Knicks> ;
+    NM:weight 102060.0 .
+
+<http://dbpedia.org/resource/Hu_Xuefeng> a NM:BasketballPlayer ;
+    NM:birthDate "1980-01-14"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Changshu>,
+        <http://dbpedia.org/resource/China_men's_national_basketball_team>,
+        <http://dbpedia.org/resource/Jiangsu>,
+        <http://dbpedia.org/resource/Suzhou> ;
+    NM:careerEnd "2017-01-01"^^xsd:date ;
+    NM:careerStart "1999-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8542 ;
+    NM:name "Hu Xuefeng" ;
+    NM:playsFor <http://dbpedia.org/resource/Jiangsu_Dragons> ;
+    NM:weight 84823.2 .
+
+<http://dbpedia.org/resource/Hubert_Davis> a NM:BasketballPlayer ;
+    NM:birthDate "1970-05-17"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Winston-Salem,_North_Carolina> ;
+    NM:careerEnd "2004-01-01"^^xsd:date ;
+    NM:careerStart "1992-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9558 ;
+    NM:name "Hubert Davis" ;
+    NM:playsFor <http://dbpedia.org/resource/North_Carolina_Tar_Heels_men's_basketball> ;
+    NM:weight 83008.8 .
+
+<http://dbpedia.org/resource/John_Paxson> a NM:BasketballPlayer ;
+    NM:birthDate "1960-09-29"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Dayton,_Ohio> ;
+    NM:careerEnd "1994-01-01"^^xsd:date ;
+    NM:careerStart "1983-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8796 ;
+    NM:name "John Paxson" ;
+    NM:playsFor <http://dbpedia.org/resource/Chicago_Bulls> ;
+    NM:weight 83916.0 .
+
+<http://dbpedia.org/resource/Johnedel_Cardel> a NM:BasketballPlayer ;
+    NM:birthDate "1970-06-06"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Mandaluyong,_Metro_Manila> ;
+    NM:careerEnd "2001-01-01"^^xsd:date ;
+    NM:careerStart "1993-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Head_coach>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.8542 ;
+    NM:name "Johnedel Cardel" ;
+    NM:playsFor <http://dbpedia.org/resource/Terrafirma_Dyip> ;
+    NM:weight 81648.0 .
+
+<http://dbpedia.org/resource/Johnny_Abarrientos> a NM:BasketballPlayer ;
+    NM:birthDate "1970-07-17"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Naga,_Camarines_Sur> ;
+    NM:careerEnd "2010-01-01"^^xsd:date ;
+    NM:careerStart "1993-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Coach_(basketball)>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.7018 ;
+    NM:name "Johnny Abarrientos" ;
+    NM:playsFor <http://dbpedia.org/resource/Magnolia_Hotshots> ;
+    NM:weight 73029.6 .
+
+<http://dbpedia.org/resource/Johnny_Dawkins> a NM:BasketballPlayer ;
+    NM:birthDate "1963-09-28"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Washington,_D.C.> ;
+    NM:careerEnd "1995-01-01"^^xsd:date ;
+    NM:careerStart "1986-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Head_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8796 ;
+    NM:name "Johnny Dawkins" ;
+    NM:playsFor <http://dbpedia.org/resource/UCF_Knights_men's_basketball> ;
+    NM:weight 74844.0 .
+
+<http://dbpedia.org/resource/Johnny_Taylor_(basketball)> a NM:BasketballPlayer ;
+    NM:birthDate "1974-06-04"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Chattanooga,_Tennessee> ;
+    NM:careerEnd "2012-01-01"^^xsd:date ;
+    NM:careerStart "1997-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.0574 ;
+    NM:name "Johnny Taylor" ;
+    NM:playsFor <http://dbpedia.org/resource/Lakeland_Magic> ;
+    NM:weight 99792.0 .
+
+<http://dbpedia.org/resource/Jon_Diebler> a NM:BasketballPlayer ;
+    NM:birthDate "1988-06-22"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Sylvania,_Ohio> ;
+    NM:careerEnd "2020-01-01"^^xsd:date ;
+    NM:careerStart "2011-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9812 ;
+    NM:name "Jon Diebler" ;
+    NM:playsFor <http://dbpedia.org/resource/Butler_Bulldogs_men's_basketball> ;
+    NM:weight 92988.0 .
+
+<http://dbpedia.org/resource/Jon_Scheyer> a NM:BasketballPlayer ;
+    NM:birthDate "1987-08-24"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Northbrook,_Illinois> ;
+    NM:careerEnd "2013-01-01"^^xsd:date ;
+    NM:careerStart "2011-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9558 ;
+    NM:name "Jon Scheyer" ;
+    NM:playsFor <http://dbpedia.org/resource/Duke_Blue_Devils_men's_basketball> ;
+    NM:weight 86184.0 .
+
+<http://dbpedia.org/resource/Jonas_Valančiūnas> a NM:BasketballPlayer ;
+    NM:birthDate "1992-05-06"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Lithuania>,
+        <http://dbpedia.org/resource/Utena> ;
+    NM:careerEnd "Currently active" ;
+    NM:careerStart "2008-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 2.1082 ;
+    NM:name "Jonas Valančiūnas" ;
+    NM:playsFor <http://dbpedia.org/resource/New_Orleans_Pelicans> ;
+    NM:weight 120204.0 .
+
+<http://dbpedia.org/resource/Jordan_Brady_(basketball)> a NM:BasketballPlayer ;
+    NM:birthDate "1983-06-21"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Vernal,_Utah> ;
+    NM:careerEnd "2012-01-01"^^xsd:date ;
+    NM:careerStart "2008-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Forward_(basketball)> ;
+    NM:height 1.9812 ;
+    NM:name "Jordan Brady" ;
+    NM:playsFor <http://dbpedia.org/resource/Windy_City_Bulls> ;
+    NM:weight 95256.0 .
+
+<http://dbpedia.org/resource/Jordan_Sibert> a NM:BasketballPlayer ;
+    NM:birthDate "1992-08-01"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Cincinnati> ;
+    NM:careerEnd "Currently active" ;
+    NM:careerStart "2015-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9304 ;
+    NM:name "Jordan Sibert" ;
+    NM:playsFor <http://dbpedia.org/resource/P.A.O.K._BC> ;
+    NM:weight 84823.2 .
+
+<http://dbpedia.org/resource/Joseph_Blair> a NM:BasketballPlayer ;
+    NM:birthDate "1974-06-12"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Akron,_Ohio> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "1996-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Basketball_coach>,
+        <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.10185 ;
+    NM:name "Joseph Blair" ;
+    NM:playsFor <http://dbpedia.org/resource/Washington_Wizards> ;
+    NM:weight 120204.0 .
+
+<http://dbpedia.org/resource/Josip_Sesar> a NM:BasketballPlayer ;
+    NM:birthDate "1978-01-17"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Mostar>,
+        <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia>,
+        <http://dbpedia.org/resource/Socialist_Republic_of_Bosnia_and_Herzegovina> ;
+    NM:careerEnd "2008-01-01"^^xsd:date ;
+    NM:careerStart "1993-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9812 ;
+    NM:name "Josip Sesar" ;
+    NM:playsFor <http://dbpedia.org/resource/KK_Cibona> ;
+    NM:weight 91627.2 .
+
+<http://dbpedia.org/resource/José_Calderón_(basketball)> a NM:BasketballPlayer ;
+    NM:birthDate "1981-09-28"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Villanueva_de_la_Serena> ;
+    NM:careerEnd "2019-01-01"^^xsd:date ;
+    NM:careerStart "1998-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.905 ;
+    NM:name "José Calderón" ;
+    NM:playsFor <http://dbpedia.org/resource/Cleveland_Cavaliers> ;
+    NM:weight 90720.0 .
+
+<http://dbpedia.org/resource/Juan_Antonio_Orenga> a NM:BasketballPlayer ;
+    NM:birthDate "1966-07-29"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Castellón_de_la_Plana>,
+        <http://dbpedia.org/resource/Spain> ;
+    NM:careerEnd "2002-01-01"^^xsd:date ;
+    NM:careerStart "1983-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Coach_(basketball)> ;
+    NM:height 2.0701 ;
+    NM:name "Juan Antonio Orenga" ;
+    NM:playsFor <http://dbpedia.org/resource/Guangzhou_Loong_Lions> ;
+    NM:weight 113400.0 .
+
+<http://dbpedia.org/resource/Primož_Brezec> a NM:BasketballPlayer ;
+    NM:birthDate "1979-10-02"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Postojna>,
+        <http://dbpedia.org/resource/SFR_Yugoslavia>,
+        <http://dbpedia.org/resource/SR_Slovenia> ;
+    NM:careerEnd "2017-01-01"^^xsd:date ;
+    NM:careerStart "1996-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 2.159 ;
+    NM:name "Primož Brezec" ;
+    NM:playsFor <http://dbpedia.org/resource/Cleveland_Cavaliers> ;
+    NM:weight 115668.0 .
+
+<http://dbpedia.org/resource/Quincy_Acy> a NM:BasketballPlayer ;
+    NM:birthDate "1990-10-06"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Tyler,_Texas> ;
+    NM:careerEnd "2022-01-01"^^xsd:date ;
+    NM:careerStart "2012-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)>,
+        <http://dbpedia.org/resource/Coach_(basketball)>,
+        <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.0066 ;
+    NM:name "Quincy Acy" ;
+    NM:playsFor <http://dbpedia.org/resource/Texas_Legends> ;
+    NM:weight 108864.0 .
+
+<http://dbpedia.org/resource/Robert_Sacre> a NM:BasketballPlayer ;
+    NM:birthDate "1989-06-06"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Baton_Rouge,_Louisiana> ;
+    NM:careerEnd "2019-01-01"^^xsd:date ;
+    NM:careerStart "2012-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 2.1336 ;
+    NM:name "Robert Sacre" ;
+    NM:playsFor <http://dbpedia.org/resource/Vancouver_Bandits> ;
+    NM:weight 122472.0 .
+
+<http://dbpedia.org/resource/Robertas_Giedraitis> a NM:BasketballPlayer ;
+    NM:birthDate "1970-08-29"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Kaunas>,
+        <http://dbpedia.org/resource/Lithuanian_Soviet_Socialist_Republic>,
+        <http://dbpedia.org/resource/Soviet_Union> ;
+    NM:careerEnd "2005-01-01"^^xsd:date ;
+    NM:careerStart "1995-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.9304 ;
+    NM:name "Robertas Giedraitis" ;
+    NM:playsFor <http://dbpedia.org/resource/BC_Delikatesas> ;
+    NM:weight 86184.0 .
+
+<http://dbpedia.org/resource/Roberts_Štelmahers> a NM:BasketballPlayer ;
+    NM:birthDate "1974-11-19"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Latvian_Soviet_Socialist_Republic>,
+        <http://dbpedia.org/resource/Riga>,
+        <http://dbpedia.org/resource/Soviet_Union> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "1990-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Head_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.905 ;
+    NM:name "Roberts Štelmahers" ;
+    NM:playsFor <http://dbpedia.org/resource/Basketball_Nymburk> ;
+    NM:weight 87998.4 .
+
+<http://dbpedia.org/resource/Rodney_Billups> a NM:BasketballPlayer ;
+    NM:birthDate "1983-01-14"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Denver,_Colorado> ;
+    NM:careerEnd "2006-01-01"^^xsd:date ;
+    NM:careerStart "2005-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Guard_(basketball)> ;
+    NM:height 1.778 ;
+    NM:name "Rodney Billups" ;
+    NM:playsFor <http://dbpedia.org/resource/Portland_Trail_Blazers> ;
+    NM:weight 74844.0 .
+
+<http://dbpedia.org/resource/Rodney_Santos> a NM:BasketballPlayer ;
+    NM:birthDate "1973-05-30"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Bulacan>,
+        <http://dbpedia.org/resource/Meycauayan>,
+        <http://dbpedia.org/resource/Philippines> ;
+    NM:careerEnd "2009-01-01"^^xsd:date ;
+    NM:careerStart "1996-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.8796 ;
+    NM:name "Rodney Santos" ;
+    NM:playsFor <http://dbpedia.org/resource/UST_Growling_Tigers> ;
+    NM:weight 79380.0 .
+
+<http://dbpedia.org/resource/Roel_Moors> a NM:BasketballPlayer ;
+    NM:birthDate "1978-12-16"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Belgium>,
+        <http://dbpedia.org/resource/Herentals> ;
+    NM:careerEnd "2015-01-01"^^xsd:date ;
+    NM:careerStart "1996-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Head_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.905 ;
+    NM:name "Roel Moors" ;
+    NM:playsFor <http://dbpedia.org/resource/BG_Göttingen> ;
+    NM:weight 94802.4 .
+
+<http://dbpedia.org/resource/Rommel_Adducul> a NM:BasketballPlayer ;
+    NM:birthDate "1976-04-21"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Philippines>,
+        <http://dbpedia.org/resource/Tuguegarao,_Cagayan> ;
+    NM:careerEnd "2013-01-01"^^xsd:date ;
+    NM:careerStart "1998-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 1.9812 ;
+    NM:name "Rommel Adducul" ;
+    NM:playsFor <http://dbpedia.org/resource/Adamson_Soaring_Falcons> ;
+    NM:weight 104328.0 .
+
+<http://dbpedia.org/resource/Ronald_Tubid> a NM:BasketballPlayer ;
+    NM:birthDate "1981-10-15"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Iloilo_City> ;
+    NM:careerEnd "2019-01-01"^^xsd:date ;
+    NM:careerStart "2003-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Shooting_guard>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 1.8542 ;
+    NM:name "Ronald Tubid" ;
+    NM:playsFor <http://dbpedia.org/resource/Terrafirma_Dyip> ;
+    NM:weight 83916.0 .
+
+<http://dbpedia.org/resource/Roneeka_Hodges> a NM:BasketballPlayer ;
+    NM:birthDate "1982-07-19"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/New_Orleans,_Louisiana> ;
+    NM:careerEnd "2015-01-01"^^xsd:date ;
+    NM:careerStart "2005-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach> ;
+    NM:height 1.8034 ;
+    NM:name "Roneeka Hodges" ;
+    NM:playsFor <http://dbpedia.org/resource/New_York_Liberty> ;
+    NM:weight 74844.0 .
+
+<http://dbpedia.org/resource/Ronnie_Burrell> a NM:BasketballPlayer ;
+    NM:birthDate "1983-07-21"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Livingston,_New_Jersey> ;
+    NM:careerEnd "2016-01-01"^^xsd:date ;
+    NM:careerStart "2005-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Power_forward_(basketball)>,
+        <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.0574 ;
+    NM:name "Ronnie Burrell" ;
+    NM:playsFor <http://dbpedia.org/resource/Chicago_Bulls> ;
+    NM:weight 106596.0 .
+
+<http://dbpedia.org/resource/Ronnie_Magsanoc> a NM:BasketballPlayer ;
+    NM:birthDate "1966-04-11"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Philippines> ;
+    NM:careerEnd "2002-01-01"^^xsd:date ;
+    NM:careerStart "1988-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.7526 ;
+    NM:name "Ronnie Magsanoc" ;
+    NM:playsFor <http://dbpedia.org/resource/Meralco_Bolts> ;
+    NM:weight 70308.0 .
+
+<http://dbpedia.org/resource/Ronnie_Price> a NM:BasketballPlayer ;
+    NM:birthDate "1983-06-21"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Friendswood,_Texas> ;
+    NM:careerEnd "2017-01-01"^^xsd:date ;
+    NM:careerStart "2005-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8796 ;
+    NM:name "Ronnie Price" ;
+    NM:playsFor <http://dbpedia.org/resource/Phoenix_Suns> ;
+    NM:weight 86184.0 .
+
+<http://dbpedia.org/resource/Roy_Hibbert> a NM:BasketballPlayer ;
+    NM:birthDate "1986-12-11"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Queens,_New_York> ;
+    NM:careerEnd "2017-01-01"^^xsd:date ;
+    NM:careerStart "2008-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 2.1844 ;
+    NM:name "Roy Hibbert" ;
+    NM:playsFor <http://dbpedia.org/resource/Philadelphia_76ers> ;
+    NM:weight 122472.0 .
+
+<http://dbpedia.org/resource/Roy_Rogers_(basketball)> a NM:BasketballPlayer ;
+    NM:birthDate "1973-08-19"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Linden,_Alabama> ;
+    NM:careerEnd "2004-01-01"^^xsd:date ;
+    NM:careerStart "1996-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.0828 ;
+    NM:name "Roy Rogers" ;
+    NM:playsFor <http://dbpedia.org/resource/Portland_Trail_Blazers> ;
+    NM:weight 106596.0 .
+
+<http://dbpedia.org/resource/Royal_Ivey> a NM:BasketballPlayer ;
+    NM:birthDate "1981-12-20"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Harlem,_New_York> ;
+    NM:careerEnd "2014-01-01"^^xsd:date ;
+    NM:careerStart "2004-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.9304 ;
+    NM:name "Royal Ivey" ;
+    NM:playsFor <http://dbpedia.org/resource/Brooklyn_Nets> ;
+    NM:weight 97524.0 .
+
+<http://dbpedia.org/resource/Rudy_Gobert> a NM:BasketballPlayer ;
+    NM:birthDate "1992-06-26"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Saint-Quentin,_Aisne> ;
+    NM:careerEnd "Currently active" ;
+    NM:careerStart "2011-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Center_(basketball)> ;
+    NM:height 2.159 ;
+    NM:name "Rudy Gobert" ;
+    NM:playsFor <http://dbpedia.org/resource/Minnesota_Timberwolves> ;
+    NM:weight 117029.0 .
+
+<http://dbpedia.org/resource/Rudy_Tomjanovich> a NM:BasketballPlayer ;
+    NM:birthDate "1948-11-24"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Hamtramck,_Michigan> ;
+    NM:careerEnd "1981-01-01"^^xsd:date ;
+    NM:careerStart "1970-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Power_forward_(basketball)> ;
+    NM:height 2.032 ;
+    NM:name "Rudy Tomjanovich" ;
+    NM:playsFor <http://dbpedia.org/resource/Minnesota_Timberwolves> ;
+    NM:weight 103421.0 .
+
+<http://dbpedia.org/resource/Sam_Cassell> a NM:BasketballPlayer ;
+    NM:birthDate "1969-11-18"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Baltimore,_Maryland> ;
+    NM:careerEnd "2008-01-01"^^xsd:date ;
+    NM:careerStart "1993-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.905 ;
+    NM:name "Sam Cassell" ;
+    NM:playsFor <http://dbpedia.org/resource/Philadelphia_76ers> ;
+    NM:weight 83916.0 .
+
+<http://dbpedia.org/resource/Samir_Selešković> a NM:BasketballPlayer ;
+    NM:birthDate "1970-04-10"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/SFR_Yugoslavia>,
+        <http://dbpedia.org/resource/Sarajevo> ;
+    NM:careerEnd "2000-01-01"^^xsd:date ;
+    NM:careerStart "1990-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Assistant_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8796 ;
+    NM:name "Samir Selešković" ;
+    NM:playsFor <http://dbpedia.org/resource/Türk_Telekom_B.K.> ;
+    NM:weight 90720.0 .
+
+<http://dbpedia.org/resource/Sandy_Brondello> a NM:BasketballPlayer ;
+    NM:birthDate "1968-08-20"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Mackay,_Queensland> ;
+    NM:careerEnd "2004-01-01"^^xsd:date ;
+    NM:careerStart "1992-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Head_Coach>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.7018 ;
+    NM:name "Sandy Brondello" ;
+    NM:playsFor <http://dbpedia.org/resource/New_York_Liberty> ;
+    NM:weight 61689.6 .
+
+<http://dbpedia.org/resource/Sani_Bečirovič> a NM:BasketballPlayer ;
+    NM:birthDate "1981-05-19"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Maribor>,
+        <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia>,
+        <http://dbpedia.org/resource/Socialist_Republic_of_Slovenia> ;
+    NM:careerEnd "2015-01-01"^^xsd:date ;
+    NM:careerStart "1995-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard>,
+        <http://dbpedia.org/resource/Sporting_director> ;
+    NM:height 1.9558 ;
+    NM:name "Sani Bečirovič" ;
+    NM:playsFor <http://dbpedia.org/resource/KK_Cedevita_Olimpija> ;
+    NM:weight 95256.0 .
+
+<http://dbpedia.org/resource/Saša_Obradović> a NM:BasketballPlayer ;
+    NM:birthDate "1969-01-29"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Belgrade>,
+        <http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia>,
+        <http://dbpedia.org/resource/Socialist_Republic_of_Serbia> ;
+    NM:careerEnd "2005-01-01"^^xsd:date ;
+    NM:careerStart "1987-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Coach_(basketball)>,
+        <http://dbpedia.org/resource/Point_guard>,
+        <http://dbpedia.org/resource/Shooting_guard> ;
+    NM:height 1.97485 ;
+    NM:name "Saša Obradović" ;
+    NM:playsFor <http://dbpedia.org/resource/AS_Monaco_Basket> ;
+    NM:weight 94000.0 .
+
+<http://dbpedia.org/resource/Scoonie_Penn> a NM:BasketballPlayer ;
+    NM:birthDate "1977-01-09"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Yonkers,_New_York> ;
+    NM:careerEnd "2011-01-01"^^xsd:date ;
+    NM:careerStart "2000-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Basketball_coach>,
+        <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8034 ;
+    NM:name "Scoonie Penn" ;
+    NM:playsFor <http://dbpedia.org/resource/Memphis_Grizzlies> ;
+    NM:weight 81648.0 .
+
+<http://dbpedia.org/resource/Scott_Brooks> a NM:BasketballPlayer ;
+    NM:birthDate "1965-07-31"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/French_Camp,_California> ;
+    NM:careerEnd "2001-01-01"^^xsd:date ;
+    NM:careerStart "1987-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Point_guard> ;
+    NM:height 1.8034 ;
+    NM:name "Scott Brooks" ;
+    NM:playsFor <http://dbpedia.org/resource/Portland_Trail_Blazers> ;
+    NM:weight 81648.0 .
+
+<http://dbpedia.org/resource/Scott_Roth> a NM:BasketballPlayer ;
+    NM:birthDate "1963-06-03"^^xsd:date ;
+    NM:birthPlace <http://dbpedia.org/resource/Cleveland,_Ohio> ;
+    NM:careerEnd "1994-01-01"^^xsd:date ;
+    NM:careerStart "1985-01-01"^^xsd:date ;
+    NM:hasPosition <http://dbpedia.org/resource/Small_forward> ;
+    NM:height 2.032 ;
+    NM:name "Scott Roth" ;
+    NM:playsFor <http://dbpedia.org/resource/Tasmania_JackJumpers> ;
+    NM:weight 96163.2 .
+
